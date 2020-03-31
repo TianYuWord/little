@@ -1,0 +1,106 @@
+一、选择题
+1.以下（  B  ）符号可用于区分析构函数和构造函数	  A  ？	B   ~	C  @	  D 	B
+2.以下堆构造函数的陈述中，正确的是( C  )	
+A.构造函数用于执行清除操作  B.构造函数的名称前应该加~符号	
+C.构造函数应该与类同名	    D.构造函数的调用方式和方法相同	
+3.对于不返回任何值的方法，其返回类型为( D  )	
+A.char	B.float  C.	int   D.void	
+4.命名空间用于( C  )	
+A.重载方法	B. 初始化变量	C. 简化命名冲突	D. 模拟对象	
+5.下面的符号命名规范的public的成员变量是(  B   )
+A._size	 B.userName	 C.  LastName	 D.  dept	
+6. 以下选项中(  B  )为"从属"关系	
+A.国家和首都	B.调制解调器和输入输出设备	
+C.车和门	    D.自行车和交通工具	
+7.如果ALPHA类继承自BETA类,则ALPHA类称为(  ),BETA类称为(    )	B
+A. 基类，派生类	 B.派生类，基类	
+C.  密封类，基类	 D. 该表述有误	
+8.( A  )关键字用于重写基类的虚拟方法	
+A.  override	   B.   new	C.  base	D.static
+9.( B  )在属性的设置方法的实现内，用于访问传递给属性的隐式参数	
+A.this	 B.  value	 C. args	   D.property	
+10.属性的(  B )访问器用于将赋值给类的私有实例变量	
+A. Get 	B.set	 C.this	 D. value	
+11. 在WinForm编程中设置启动窗口在哪个文件中设置( A  ) 
+A.program.cs       B. program.dll        C. program.designer     D. program.txt
+12.WinForm中以模式方式显示窗体是哪个方法(  B   )
+A. Show()     B ShowDialog()   
+C.  Hide()    D.Close()
+13.在C#中编程中让控件可用或不可用时设置控件的哪个属性(  B  )
+A.Visible     B.Enabled     C. Ascroll     D.Size
+14.单选按钮或多选按钮是否被选中是哪个属性(  B  )
+A.Enabled      B. Checked     C.Focus()    D.Change()
+15.多文档窗体的叫( B  )
+ A.SDI      B.MDI     C.IDE     D.Wform
+16.WinForm中以设置窗体在运行后在屏幕中央的属性是(  C   )
+A. DOCK     B LEFt   C.  StartPosition    D.Center
+17．下列哪个关键字在SELECT语句中表示取消重复行的?（D）
+A.  *	    B.  all     C.   desc	    D. distinct
+18．在SQL语言中收权的操作是通过什么语句实现的？（B）
+ A. CREATE	B. REVOKE	C.  GRANT   D. select
+19． 如果在Select语句中使用having单词,则必须和哪个单词匹配（A）
+ A. GROUP BY    B.  COMPUTE BY	 
+C. create     D. COMPUTE	
+20．下面哪个统计函数可以计算平均值？（B）
+A． sum B．Avg 	C．Count    D．min
+21．哪个数据库拥有sysusers表( A )
+A. 所有数据库	  B. 所有用户创建的数据 
+C.  master数据库  D. 该表保存在注册表中
+22．SQL语句中用来删除元组的命令是( C )
+A. insert	 B.  update	 C. delete	D .create
+23．SQL 是（ C ）的缩写。 
+A． StandarD Query Language     B． Select Query Language 
+C． StructureD Query Language   D． 以上都不是
+24.下列关键字中不属于数据定义语句的的(  D   )
+A. create     B. drop    C. alter   D. grant
+25． System.Excption类的子类包含（  B，D   ）
+ A．ApplicationException     B. IOException 
+ C. Exception                D. SystemException
+26. try关键字的作用是(  A  )
+ A.捕获异常       B. 抛出异常   
+C.处理异常      D.释放资源
+27.C#中抛出异常使用的关键字是(  C  )
+A.  try        B.finally     C. Throw    D. catch
+28. 调试程序使用的快捷键是( B  )
+ A. CTRL+F1      B.   F5       C.CTRL+F3      D.  F9
+29.调试C#程序时切换断点使用的快捷键是(  A  )
+A. F9     B.  F5      C. F3      D.F8
+30．C#中逐语句调试使用的快捷键是(  B  )
+A.F5     B.F11,      C.  F8     D.F9  
+
+二、填空题
+
+  1、数据库管理系统简称为      DBMS       。
+
+  2、SQL server 的所有操作都将记录在      日志     文件里。
+
+  3、在SQL Server中，    MIN()      函数可以计算某一列上的最小值，    AVG()     函数可以计算某一列上的平均值。
+
+  4、描述事物的符号记录称为     数据      。
+
+5、SQL 语言的GRANT,REVOKE语句主要用来维护数据库的____安全性____。
+
+
+
+
+三、问到题
+1、什么是装箱，什么是拆箱？
+装箱 就是把“值类型”转换成“引用类型”(Object)；
+拆箱 就是把“引用类型”转换成“值类型”；
+
+
+
+
+
+2．程序有哪几种结构，分别有什么特点？ 
+1)顺序结构：顺序结构是一种线性、有序的结构，它依次执行各语句模块。
+2)循环结构：循环结构是重复执行一个或几个模块，直到满足某一条件为止。
+3)选择结构：选择结构是根据条件成立与否选择程序执行的通路。
+采用结构化程序设计方法，程序结构清晰，易于阅读、测试、排错和修改。由于每个模块执行单一功能，模块间联系较少，
+使程序编制比过去更简单，程序更可靠，而且增加了可维护性，每个模块可以独立编制、测试。
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+一、单选题
+下列修饰符中表示私有的是（  B   ）；
+A、public      B、private          C、static         D、protected
+
+java程序中，main方法格式正确的是：（  A   ）；
+A、public static void main(String[] args)           B、public void main(String[] args)
+C、public static main(String[] args)           D、public static void main(String[] s)
+
+下列属于逻辑运算符的是：C
+A.+              B.?:
+C.&&            D.>>
+
+已知i为整型变量，关于一元运算++i和i++，下列说法正确的是：D
+A. ++i运算将出错                  B．在任何情况下运行结果都一样
+C．在任何情况下运行结果都不一样       D．在任何情况下变量i的值都增加1
+
+以下哪个对象可以通过键/值对保存（ C   ）；
+A、ArrayList         B、LinkedList        C、HashMap        D、HashSet
+
+运行以下JAVA代码会出现什么异常：（  ？  ）；？？？
+A、 NullPointerException                B、ClassNotFoundException
+C、IOException                        D、ApplicationException
+
+JAVA最初的开发公司是那一家（  D  ）；
+A、oracle        B、百度           C、阿里巴巴          D、sun
+
+在当前的java实现中，每个文件编译之后就是一个以（ B ）为后缀的文件
+A.Java          B.class
+C.doc           D.exe
+
+MySql中表示字符串的数据类型是哪一个（  D  ）；
+A、int      B、double       C、varchar      D、String
+
+在java语句中：37.2%10的运算结果为：A
+A．7.2    B．7     C．3       D．0.2
+
+二、多选题
+1、JAVA中面向对象的基本特征是：（  A,B,D  ）；
+A、封装        B、继承          C、异常           D、多态
+2、关于接口的说法，正确的是（  A,C,B,D  ）；
+A、接口要实例化必须使用该接口的实现类。      B、接口的表示是interface
+C、接口可以直接调用                        D、实现接口的代码是implements
+
+三、填空题
+Mysql中查询所有数据库的sql语句是（   show databases   ）；
+Mysql中表示小数的数据类型是（   float   ）；
+系模式存在着三种操作异常:修改异常、（   插入异常   ）、删除异常。
+JAVA中的基本数据类型是float，（   int   ），char，（   String    ），（   double   ），（    byte     ），（   long    ），short。
+线程的生命周期是创建阶段，（   就绪阶段   ），运行阶段，（   阻塞阶段    ），销毁阶段。
+数据库在磁盘上的基本组织形式是(  文件   )。
+
+
+四、编码题
+现有A=10，B=16，请使用中间变量法将A和B的数字互相交换。
+Integer A = 10;
+Integer B = 16;
+Integer C = 0;
+
+C = A
+A = B
+B = C
+
+
+训练一年级学生做加法练习，程序随机产生两个一位整数，然后显示“? +? 等于多少？”。当学生输入答案后，程序输出其答案是正确还是错误。
+答：
+```
+public class test {
+    public static void main(String[] args) {
+        Random r = new Random();
+        Scanner scanner = new Scanner(System.in);
+        Integer[] count = new Integer[2];
+        Integer result = 0;
+        for (int i = 0; i < 2; i++) {
+            count[i] = r.nextInt(10);
+            result+=count[i];
+            if (i == 1){
+                System.out.println("请输入["+count[0]+"] + ["+count[1]+"]的结果");
+                Integer userResult = scanner.nextInt();
+                if(userResult == result){
+                    System.out.println("回答正确");
+                    printMsg(result,userResult);
+                    return;
+                }
+                System.out.println("回答错误");
+                printMsg(result,userResult);
+                result = null;
+            }
+        }
+
+    }
+
+    public static void printMsg(Integer pc,Integer user){
+        System.out.println("电脑的值为 ： " + pc);
+        System.out.println("用户的值为 ： " + user);
+    }
+}
+```
+
+
+请使用代码写一个“猜数字”游戏，要求：
+     1、随机产生一个1到100的数字作为答案。
+     2、玩家可以输入一个数字。
+     3、当玩家输入的数字大于，小于随机数时给予提示。
+     4、当玩家输入正确的数字时游戏结束。
+答：
+```
+public class test2 {
+    public static void main(String[] args) {
+        boolean flag = true;
+        Scanner scanner = new Scanner(System.in);
+        Integer TrueAnswer = new Random().nextInt(100);
+        System.out.println("------猜谜游戏开始了------");
+        while(flag){
+            //System.out.println("仅提供测试人员使用"+TrueAnswer);
+            Integer userDa = scanner.nextInt();
+            if(TrueAnswer>userDa){
+                System.out.println("数值小于答案");
+            }else if(TrueAnswer<userDa){
+                System.out.println("数值大于答案");
+            }else{
+                System.out.println("猜中了");
+                flag=false;
+            }
+        }
+    }
+}
+```
